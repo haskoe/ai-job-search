@@ -20,7 +20,7 @@ framework_version: 1.1.1
 | Language | Level | Notes |
 |----------|-------|-------|
 | Dansk | Native | Modersmål; alle kliniske og skriftlige opgaver |
-| Engelsk | B2 (good working level) | Comfortable reading and working with research literature and written English; less comfortable in fast-paced spoken English. Postings demanding "flydende"/"fluent" spoken English should be FLAGged, not auto-passed. |
+| Engelsk | Fluent (written and spoken) | Entire MSc programme and the 45 ECTS thesis were completed in English. Confirmed by the candidate 2026-09-08, superseding an earlier B2 self-assessment. Postings requiring fluent English now PASS the Language Gate. |
 
 ## Education
 
@@ -30,18 +30,28 @@ framework_version: 1.1.1
 | Professionsbachelor, Ernæring og Sundhed (Klinisk Diætetik) | 2021-02 – 2024-06 | Københavns Professionshøjskole | Klinisk diætetik, ernæringsterapi, systematisk litteratursøgning (PICO), kritisk vurdering af kliniske studier |
 
 ### Kandidatspeciale (Københavns Universitet, 2024–2026)
+**Title:** *Phosphate and calcium balance in patients with chronic kidney disease stage 4-5* — 45 ECTS, written and defended in English.
+
+> **Unresolved:** participant count. The original `resume.yaml` says **n=42**; the candidate's revised CV (2026-09-08) says **52 rekrutterede deltagere**. These may both be true (52 recruited, 42 completing). The candidate is checking. **Use 42 until confirmed** and never state 52 without resolving this.
+
 Klinisk tillægsstudie (n=42) til en større kohorte med to primære fokusområder:
 - Korrelation mellem nyrefunktion (clearance) og calcium-/fosfatbalance hos stadie 4-5 kronisk nyresyge patienter
 - Metodesammenligning af deltageres kostindtag: vejet registrering vs. billedbaseret fotometode
 
 **Forskningsansvar:** udarbejdede udkast til tillægsprotokol og deltagerinformation (godkendt af VEK), udarbejdede diætetisk vejledningsmateriale, registrerede studiet på ClinicalTrials.gov. Forbereder aktuelt studiet til videnskabelig publicering som førsteforfatter.
 
-**Klinisk praksis og data:** participant-information, samtykkeindhentning og oplæring af patienter i kostregistrering i koordination med forsøgslæge; løbende og telefonisk opfølgning af deltagere; udtræk af lab-data og journaler fra Sundhedsplatformen; systematisk databearbejdning i VitaKost og REDCap; statistisk analyse i GraphPad Prism.
+**Klinisk praksis og data:** **rekruttering**, participant-information, samtykkeindhentning og oplæring af patienter i kostregistrering i koordination med forsøgslæge; løbende og telefonisk opfølgning af deltagere; udtræk af lab-data og journaler fra Sundhedsplatformen; systematisk databearbejdning i VitaKost og REDCap.
 
-**Relevante kurser:** *Study Design in Human Nutrition* (protokoludarbejdelse, statistisk analyse i R-studio, studiedesign); *Evidence, Diet and Health* (avanceret kritisk analyse af forskningslitteratur og studiedesigns); *Cell Cycle and Cancer Control* (molekylær onkologi, cancerudvikling på celle- og DNA-niveau).
+**REDCap — scope correction (2026-09-08):** the candidate **contributed to building the REDCap instruments**, under supervision of a PhD-student physician, in addition to data cleaning and quality assurance. Earlier drafts wrongly recorded this as data processing only and declared instrument-building as a gap. It is not a gap.
+
+**Statistical analysis:** performed in **GraphPad Prism and R** (not merely course-level R): correlation analyses, t-test, Mann-Whitney, Wilcoxon, and **Bland-Altman analysis** for the dietary-method comparison, reviewed continuously with the supervisor.
+
+**Formidling:** presented the study at **journal club for the department's physicians**. Preparing the study for publication as first author.
+
+**Relevante kurser:** *Study Design in Human Nutrition* (protokoludarbejdelse, statistisk analyse i R, studiedesign); *Evidence, Diet and Health* (avanceret kritisk analyse af forskningslitteratur og studiedesigns); *Tools and Techniques in Nutrition Research*; *Cell Cycle and Cancer Control* (molekylær onkologi). Karaktergennemsnit **11,0**.
 
 ### Bachelorprojekt (Rigshospitalet, Ernæringsenheden, 2024)
-Bidrog til opstartsfasen og den systematiske dataindsamling i et prospektivt, observationelt studie af ERAS-behandlede cystektomi-patienter på urologisk afdeling (n=25). Kortlægning af energi- og proteinindtag samt dækningsgrad (>75%), registrering af Nutrition Impact Symptoms (NIS-faktorer/ernæringsrisiko), opfølgning på vægtændringer og væskebalance over et 30-dages postoperativt forløb.
+Bidrog til opstartsfasen og den systematiske dataindsamling i et prospektivt, observationelt studie af ERAS-behandlede cystektomi-patienter på urologisk afdeling (n=25). Kortlægning af energi- og proteinindtag samt dækningsgrad (>75%), registrering af Nutrition Impact Symptoms (NIS-faktorer/ernæringsrisiko), opfølgning på vægtændringer og væskebalance over et 30-dages postoperativt forløb. Systematisk journalarbejde i Sundhedsplatformen.
 
 **Relevant kursus:** *Tolkning og anvendelse af klinisk forskning* — systematisk litteratursøgning (PICO), kritisk analyse og vurdering af kliniske studier.
 
@@ -60,14 +70,14 @@ København
 ### Klinisk praktik, nefrologisk afdeling — Rigshospitalet København (2023-11 – 2024-01)
 København · 10 uger
 - Klinisk vejledning af prædialyse- og dialysepatienter inden for fosfat-, kalium- og proteinregulering
-- Vejledning og håndtering af endokrinologiske tilstande (type 1/2-diabetes, pancreasresekerede patienter)
+- Vejledning og håndtering af endokrinologiske tilstande (type 1/2-diabetes, pancreasresekerede patienter), heraf **én ugedag på endokrinologisk afdeling** — dette er det fjerde speciale i de 20 ugers praktik
 - Løbende tværfaglig dialog og sparring med afdelingens læger og sygeplejersker
 
 ### Klinisk praktik, hjerteafdelingen — Bispebjerg og Frederiksberg Hospital (2023-09 – 2023-11)
 København · 6 uger, hjerteafdelingen og reumatologisk forskningsenhed
 - Vejledning i hjertesund og kolesterolsænkende kost til patienter med hyperkolesterolæmi
 - Højproteinkost til postoperative patienter
-- Selvstændig undervisning i vægttab for knæartrosepatienter i forbindelse med et forskningsprojekt (1 ugedag)
+- Observerede undervisning og afholdt **selv én undervisningsgang** i et forskningsprojekt om vægttab til knæartrosepatienter (corrected 2026-09-08 — earlier sources read "1 ugedag" as a weekly commitment, which overstated it)
 
 ### Klinisk praktik, neurologisk afdeling — Rigshospitalet Glostrup (2023-08 – 2023-09)
 Glostrup · 4 uger

@@ -20,7 +20,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   | Language | Level |
   |----------|-------|
   | Dansk | Native |
-  | Engelsk | B2 — good working level; comfortable with research literature and written work, less comfortable in fast spoken English |
+  | Engelsk | Fluent, written and spoken — entire MSc and the 45 ECTS thesis completed in English (confirmed 2026-09-08) |
 - **CV language:** Danish or English, decided per posting — Danish for hospitals, regioner, kommuner and Danish private clinics; English for industry, pharma and international research groups
 
 - **Status:** Newly graduated (MSc defended Aug 2026), actively job seeking
@@ -28,7 +28,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Education
 - **MSc in Human Nutrition** (2024-2026) - Københavns Universitet
-  - Thesis: "Klinisk tillægsstudie (n=42): korrelation mellem nyrefunktion (clearance) og calcium-/fosfatbalance hos stadie 4-5 kronisk nyresyge patienter, samt metodesammenligning af kostindtag via vejet registrering vs. billedbaseret fotometode"
+  - Thesis: "Phosphate and calcium balance in patients with chronic kidney disease stage 4-5" (45 ECTS, in English) — klinisk tillægsstudie med korrelation mellem nyrefunktion og calcium-/fosfatbalance samt metodesammenligning af kostregistrering (vejet vs. billedbaseret fotometode)
   - Topics: forskningsdesign, protokoludarbejdelse, statistisk analyse (R-studio, GraphPad Prism), kritisk litteraturvurdering, molekylær onkologi
 - **Professionsbachelor in Ernæring og Sundhed (Klinisk Diætetik)** (2021-2024) - Københavns Professionshøjskole
   - Bachelor project: prospektivt observationelt studie af ERAS-behandlede cystektomi-patienter, Rigshospitalet Ernæringsenheden (n=25)
@@ -46,15 +46,15 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Klinisk praktik, hjerteafdelingen** (2023-09 - 2023-11) - **Bispebjerg og Frederiksberg Hospital** (København)
   - 6 ugers praktik på hjerteafdelingen og reumatologisk forskningsenhed
   - Vejledning i hjertesund/kolesterolsænkende kost ved hyperkolesterolæmi samt højproteinkost til postoperative patienter
-  - Selvstændig undervisning i vægttab for knæartrosepatienter i et forskningsprojekt (1 ugedag)
+  - Observerede undervisning og afholdt selv én undervisningsgang i et forskningsprojekt om vægttab til knæartrosepatienter
 - **Klinisk praktik, neurologisk afdeling** (2023-08 - 2023-09) - **Rigshospitalet Glostrup** (Glostrup)
   - 4 ugers praktik: opstart af ernæringsterapi og diætetisk praksis over for neurologiske patienter (tetraplegi, Parkinson), spiseforstyrrelser og diabetes
 
 ### Technical Skills
 - **Primary:** Klinisk diætetisk vejledning og ernæringsterapi (nefrologi, kardiologi, neurologi, endokrinologi, onkologi); kostregistrering og -beregning; ernæringsscreening og -risikovurdering
-- **Secondary:** Klinisk forskningsmetode — protokoludarbejdelse, VEK-ansøgning, ClinicalTrials.gov-registrering, samtykkeindhentning, dataindsamling og -bearbejdning; statistisk analyse; systematisk litteratursøgning (PICO) og kritisk artikelvurdering
+- **Secondary:** Klinisk forskningsmetode — protokoludarbejdelse, VEK-ansøgning, ClinicalTrials.gov-registrering, rekruttering og samtykkeindhentning, opbygning af REDCap-instrumenter under supervision, dataindsamling og -bearbejdning; statistisk analyse i GraphPad Prism og R (korrelation, t-test, Mann-Whitney, Wilcoxon, Bland-Altman); systematisk litteratursøgning (PICO) og kritisk artikelvurdering
 - **Domain:** Human ernæring; kronisk nyresygdom (stadie 4-5, calcium-/fosfatbalance); hjerte-kar-ernæring; ERAS og perioperativ ernæring; onkologisk ernæring og NIS-faktorer; artrose og vægttab
-- **Software:** REDCap, VitaKost, GraphPad Prism, R-studio, Sundhedsplatformen, Microsoft Office
+- **Software:** REDCap (instrumentopbygning under supervision, datarensning, kvalitetssikring), VitaKost, GraphPad Prism, R, Sundhedsplatformen, Microsoft Office
 
 ### Certifications
 - **Dansk autorisation som klinisk diætist** (Styrelsen for Patientsikkerhed)
@@ -70,7 +70,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Detaljeorienteret** - udpræget høj kvalitetssans i datadokumentation; sporbarhed og korrekthed i registrering er en drivkraft, ikke en pligt
 - **Selvkørende med aktiv sparring** - driver gerne egne opgaver selvstændigt, men opsøger bevidst faglige diskussioner og spørger til råds frem for at gætte
 - **Strengths:** Struktur og systematik i dataarbejde; kombination af klinisk patientkontakt og formel forskningsmetode; fleksibilitet i hverdagen; høj faglig ambition
-- **Growth areas:** Begrænset erfaring som ansat (klinisk erfaring stammer fra 20 ugers praktik og specialearbejde frem for fastansættelse); mundtlig engelsk på B2-niveau; kørekort først klar nov. 2026
+- **Growth areas:** Begrænset erfaring som ansat (klinisk erfaring stammer fra 20 ugers praktik og specialearbejde frem for fastansættelse); ingen registerforskning eller fondsansøgninger; kørekort først klar nov. 2026
 - **Thrives in:** Fagligt miljø med diætistkolleger og tværfaglig sparring, hvor evidens og datakvalitet vægtes højt, og hvor klinisk patientarbejde kan kombineres med forskning eller projektarbejde
 
 ### What Excites You

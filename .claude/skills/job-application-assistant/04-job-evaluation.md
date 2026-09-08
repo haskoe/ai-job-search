@@ -46,9 +46,9 @@ Judge the level comparison the same way you judge everything else in this framew
 
 **Worked example:** a candidate whose Languages table lists Spanish (Native) and English (B1/B2). A posting requiring "fluent Russian" → **FAIL**, Russian isn't declared at all. A posting requiring "fluent English" → **FLAG**, English is declared but "fluent" plausibly exceeds B1/B2 — score and draft the application, but tell the candidate this posting's bar may be a stretch and let them decide. A posting requiring "conversational English" or unspecified English → **PASS**, B1/B2 clears a "conversational" bar cleanly.
 
-**Julian's recurring cases.** Danish is native, so virtually every Danish posting passes cleanly — but the ad being written in Danish never *by itself* decides anything. The case that actually recurs is English:
-- "Flydende engelsk i skrift og tale" / "engelsk er koncernsprog" → **FLAG.** English is declared at B2, which is honest working level but plausibly below a stated fluency bar in speech. Score and draft; tell Julian the spoken bar may be a stretch and let him judge — a research group reading English literature all day is a very different bar from a commercial role presenting in English.
-- "Gode engelskkundskaber", "du læser engelsksproget faglitteratur", or English simply named without a level → **PASS.** B2 clears this, and the English-language MSc coursework (*Study Design in Human Nutrition*, *Evidence, Diet and Health*) is direct evidence.
+**Julian's recurring cases.** Danish is native and English is fluent, so nearly every posting passes this gate cleanly.
+- "Flydende engelsk i skrift og tale" / "engelsk er koncernsprog" → **PASS** (updated 2026-09-08). English was previously declared at B2 and flagged here; the candidate confirmed fluency in both writing and speech, evidenced by an entire MSc programme and a 45 ECTS thesis completed in English. Do not flag these postings any more.
+- "Gode engelskkundskaber" or English named without a level → **PASS.**
 - Any third language as a job condition (tysk, svensk, arabisk…) → **FAIL.** Only Danish and English are declared.
 - An English-language ad for a Danish hospital or university post where the working language is Danish → **PASS.** Judge the role, not the ad.
 
@@ -68,7 +68,7 @@ How well do the required/preferred skills align with the candidate's capabilitie
 
 **Strong match areas:** Klinisk diætetisk vejledning og ernæringsterapi (nefrologi, kardiologi, endokrinologi, neurologi, onkologi/NIS, ERAS-perioperativ); kostregistrering, -beregning og dækningsgrad; ernæringsscreening og risikovurdering; klinisk forskningsmetode (protokol, VEK, ClinicalTrials.gov, samtykke, dataindsamling); REDCap; VitaKost; GraphPad Prism; Sundhedsplatformen; systematisk litteratursøgning (PICO) og kritisk artikelvurdering
 
-**Moderate match areas:** Statistik ud over deskriptiv/basal analyse; R (kursusniveau — *Study Design in Human Nutrition*); patientundervisning i grupper; kvalitetsudvikling og instruksarbejde; pædiatrisk, geriatrisk og psykiatrisk ernæring (ikke dækket af praktikforløbene); kommunal forebyggelse og sundhedsfremme; engelsk som arbejdssprog i tale
+**Moderate match areas:** Avanceret biostatistik ud over anvendte tests (korrelation, t-test, Mann-Whitney, Wilcoxon, Bland-Altman i GraphPad Prism og R); patientundervisning i grupper; kvalitetsudvikling og instruksarbejde; pædiatrisk, geriatrisk og psykiatrisk ernæring (ikke dækket af praktikforløbene); kommunal forebyggelse og sundhedsfremme
 
 **Weak match areas:** Ledelses- og budgetansvar; personaleledelse; salg, key account og kommerciel forhandling; storkøkken-/produktionsledelse og køkkendrift; fødevareproduktudvikling og -teknologi; regulatory affairs (fødevarelovgivning, claims); avanceret biostatistik og programmering (Python, SQL, SAS)
 

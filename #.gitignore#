@@ -61,27 +61,27 @@ skills-lock.json
 # The negations stay .tex-only - the stock example files are always LaTeX,
 # and a wildcard negation (!cv/main_example.*) would also re-include build
 # artifacts like main_example.pdf/.aux.
-# cv/main_*.*
+cv/main_*.*
 !cv/main_example.tex
 cv/*.txt
-# cover_letters/cover_*.*
-# cover_letters/Cover_*.*
+cover_letters/cover_*.*
+cover_letters/Cover_*.*
 !cover_letters/cover_example.tex
 
 # documents/ subfolder contents are personal — only README and folder structure are tracked
-# documents/cv/**
-# documents/linkedin/**
-# documents/diplomas/**
-# documents/references/**
+documents/cv/**
+documents/linkedin/**
+documents/diplomas/**
+documents/references/**
 # Also where /interview saves its prep packs (interview_prep_<stage>.md): these
 # name the employers applied to, quote what was submitted, and set out the
 # candidate's weak points.
-# documents/applications/**
-# documents/postings/**
+documents/applications/**
+documents/postings/**
 # Belt-and-braces, not the primary guard: nothing writes here. Prep packs land
 # in documents/applications/<company>_<role>/, covered above. Kept because
 # tools/security_guards.py pins it in REQUIRED_IGNORE_RULES.
-# documents/interview/**
+documents/interview/**
 !documents/**/.gitkeep
 
 # Personal job search tracking

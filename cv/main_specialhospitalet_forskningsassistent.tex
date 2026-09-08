@@ -1,0 +1,187 @@
+%% CV - Specialhospitalet for Polio- og Ulykkespatienter
+%% Forskningsassistent med interesse for rehabilitering
+%% Compile with: lualatex main_specialhospitalet_forskningsassistent.tex
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
+\colorlet{firstnamecolor}{color1}
+\colorlet{lastnamecolor}{color1}
+\colorlet{namecolor}{color1}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+% T1 puts æ ø å in the font as single glyphs so the PDF text layer extracts
+% them as real characters for ATS parsers.
+\usepackage[T1]{fontenc}
+\AtEndPreamble{\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Julian Askoe Bluming - CV - Forskningsassistent},
+    pdfpagemode=UseNone,
+}}
+\usepackage[scale=0.80]{geometry}
+\usepackage{needspace}
+\usepackage{import}
+
+% personal data
+\name{Julian}{Askøe Bluming}
+\address{Pansvej 12, 2680 Solrød Strand, Danmark}{}{}
+\phone[mobile]{+45 91 56 85 28}
+\email{julian.askoe@gmail.com}
+\extrainfo{Autoriseret klinisk diætist}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFIL
+% ============================================================
+
+\vspace{6pt}
+\small{Kandidat i Human Ernæring fra Københavns Universitet og autoriseret klinisk diætist, med konkret erfaring fra hele forløbet i et klinisk forskningsprojekt. I mit kandidatspeciale udarbejdede jeg tillægsprotokol og deltagerinformation til godkendelse i Videnskabsetisk Komité, registrerede studiet på ClinicalTrials.gov og stod derefter for deltagerkoordinering, dataindsamling, databearbejdning og statistisk analyse for 42 deltagere. Jeg arbejder grundigt, systematisk og detaljeorienteret, med særlig vægt på dokumentation og sporbarhed i forskningsdata, og trives i en funktion hvor opgaverne spænder bredt og går på tværs af flere projekter. Jeg søger en tværgående forskningsassistentfunktion i et anvendelsesorienteret forskningsmiljø tæt på klinikken.}
+
+% ============================================================
+%     KERNEKOMPETENCER
+% ============================================================
+
+\section{Kernekompetencer}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Datamanagement og kvalitetssikring}: Bidrag til opbygning af REDCap-instrumenter under supervision, samt datarensning, dokumentation og kvalitetssikring i REDCap og VitaKost. Udtræk af lab- og journaldata fra Sundhedsplatformen med fast rutine for kontrol af hver enkelt registrering. Sikker håndtering af personoplysninger og helbredsdata under VEK-godkendt protokol og indhentet samtykke.
+
+\item \textbf{Statistiske analyser}: Gennemførelse af studiets analyser i GraphPad Prism og R: korrelationsanalyser, t-test, Mann-Whitney, Wilcoxon samt Bland-Altman-analyse til vurdering af overensstemmelse mellem to målemetoder.
+
+\item \textbf{Forskningsprotokoller og videnskabsetiske ansøgninger}: Udarbejdelse af tillægsprotokol og deltagerinformation godkendt af Videnskabsetisk Komité (VEK); registrering af studie på ClinicalTrials.gov.
+
+\item \textbf{Litteratursøgning og kritisk vurdering}: Systematisk litteratursøgning efter PICO. Kritisk vurdering af studiedesign og evidens (\emph{Evidence, Diet and Health}).
+
+\item \textbf{Deltagerkoordinering og projektmaterialer}: Deltagerinformation, samtykkeindhentning, oplæring og løbende telefonisk opfølgning af deltagere, koordineret med forsøgslæge og klinisk personale.
+
+\item \textbf{Formidling}: Videnskabelig skrivning på engelsk med henblik på publicering; fremlæggelse til journal club for afdelingens læger; udarbejdelse af letlæst materiale til deltagere og patienter (deltagerinformation og diætetisk vejledningsmateriale); selvstændig patientundervisning i et forskningsprojekt; kritisk vurdering af engelsksproget faglitteratur.
+
+\end{itemize}
+
+% ============================================================
+%     UDDANNELSE
+% ============================================================
+
+\section{Uddannelse}
+\vspace{1pt}
+\begin{itemize}
+
+\needspace{4\baselineskip}
+\item{\cventry{2024-2026}{Kandidat (MSc) i Human Ernæring}{Københavns Universitet}{København}{}{\vspace{1pt}
+Kandidatuddannelse gennemført på engelsk. Speciale (45 ECTS, engelsk): \emph{Phosphate and calcium balance in patients with chronic kidney disease stage 4-5}, se Forskningserfaring.\\
+Relevante kurser: \emph{Study Design in Human Nutrition} (protokoludarbejdelse, studiedesign, statistisk analyse i R); \emph{Evidence, Diet and Health} (kritisk analyse af forskningslitteratur); \emph{Tools and Techniques in Nutrition Research}. Karaktergennemsnit 11,0.
+}}
+
+\vspace{3pt}
+
+\needspace{4\baselineskip}
+\item{\cventry{2021-2024}{Professionsbachelor i Ernæring og Sundhed (Klinisk Diætetik)}{Københavns Professionshøjskole}{København}{}{\vspace{1pt}
+Bachelorprojekt gennemført i Ernæringsenheden på Rigshospitalet, se Forskningserfaring.\\
+Relevant kursus: \emph{Tolkning og anvendelse af klinisk forskning} (systematisk litteratursøgning efter PICO, kritisk vurdering af kliniske studier).
+}}
+
+\end{itemize}
+
+% ============================================================
+%     FORSKNINGSERFARING
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Forskningserfaring}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{2024-2026}{Kandidatspeciale, forskningsansvarlig}{Københavns Universitet}{København}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Klinisk tillægsstudie (n=42) til en større igangværende kohorte, med to formål: korrelationen mellem nyrefunktion og calcium-/fosfatbalance hos patienter med kronisk nyresygdom i stadie 4-5, samt en metodesammenligning af kostindtag opgjort ved vejet registrering over for en billedbaseret fotometode.}
+    \item {Udarbejdede udkast til tillægsprotokol og deltagerinformation, godkendt af Videnskabsetisk Komité, og registrerede studiet på ClinicalTrials.gov.}
+    \item {Varetog rekruttering, deltagerinformation, samtykkeindhentning og oplæring af deltagerne i dataregistrering i koordination med forsøgslæge, samt løbende og telefonisk opfølgning gennem hele forløbet.}
+    \item {Bidrog til opbygning af REDCap-instrumenterne under supervision af ph.d.-studerende læge, og forestod datarensning og kvalitetssikring i REDCap og VitaKost samt udtræk af lab- og journaldata fra Sundhedsplatformen.}
+    \item {Gennemførte de statistiske analyser i GraphPad Prism og R: korrelationsanalyser, non-parametriske tests og Bland-Altman-analyse af overensstemmelsen mellem de to kostregistreringsmetoder.}
+    \item {Udarbejdede diætetisk vejledningsmateriale til deltagerne, fremlagde studiet til journal club for afdelingens læger, og forbereder det aktuelt til publicering som førsteforfatter.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{2024}{Bachelorprojekt}{Rigshospitalet, Ernæringsenheden}{København}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Bidrog til opstartsfasen og den systematiske dataindsamling i et prospektivt observationelt studie af cystektomi-patienter i accelereret postoperativt rehabiliteringsforløb (ERAS) på urologisk afdeling (n=25).}
+    \item {Registrerede energi- og proteinindtag og dækningsgrad samt patientrapporterede symptomer ved struktureret registrering af Nutrition Impact Symptoms som mål for ernæringsrisiko, og fulgte vægtændringer og væskebalance over et 30-dages postoperativt forløb, med systematisk journalarbejde i Sundhedsplatformen.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     KLINISK ERFARING
+% ============================================================
+
+\section{Klinisk erfaring}
+\vspace{1pt}
+20 ugers klinisk praktik som led i professionsbacheloruddannelsen, fordelt på tre hospitalsafdelinger og fire specialer. Praktikforløbene gav rutine i tværfagligt samarbejde med læger og sygeplejersker og i direkte patientkontakt.
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{3\baselineskip}
+\item{\cventry{nov. 2023 - jan. 2024}{Klinisk praktik, nefrologisk afdeling (10 uger)}{Rigshospitalet}{København}{}{\vspace{1pt}
+Vejledning af prædialyse- og dialysepatienter, samt én ugedag på endokrinologisk afdeling med patienter med diabetes og pancreasresektion. Løbende tværfaglig dialog og sparring med afdelingens læger og sygeplejersker.}}
+
+\vspace{3pt}
+
+\needspace{3\baselineskip}
+\item{\cventry{sep. 2023 - nov. 2023}{Klinisk praktik, hjerteafdelingen (6 uger)}{Bispebjerg og Frederiksberg Hospital}{København}{}{\vspace{1pt}
+Diætetisk vejledning på hjerteafdelingen. Fulgte desuden et forskningsprojekt om vægttab til knæartrosepatienter i den reumatologiske forskningsenhed, hvor jeg observerede undervisningen og selv afholdt én undervisningsgang.}}
+
+\vspace{3pt}
+
+\needspace{3\baselineskip}
+\item{\cventry{aug. 2023 - sep. 2023}{Klinisk praktik, neurologisk afdeling (4 uger)}{Rigshospitalet Glostrup}{Glostrup}{}{\vspace{1pt}
+Deltog i opstart af ernæringsterapi og diætetisk praksis over for neurologiske patienter, herunder patienter med tetraplegi og Parkinson, i tværfagligt samarbejde på afdelingen.}}
+
+\end{itemize}
+
+% ============================================================
+%     SPROG
+% ============================================================
+
+\section{Sprog}
+\vspace{1pt}
+\begin{itemize}
+\item {Dansk: modersmål. Engelsk: flydende i skrift og tale; hele kandidatuddannelsen og specialet er gennemført på engelsk.}
+\end{itemize}
+
+% ============================================================
+%     PUBLIKATIONER
+% ============================================================
+
+\section{Publikationer}
+\vspace{1pt}
+\begin{itemize}
+\item {Bluming, J.\ et al.\ \emph{Phosphate and calcium balance in patients with chronic kidney disease stage 4-5}, inkl. metodesammenligning af kostregistrering. \emph{Manuskript under udarbejdelse til publicering, førsteforfatter.}}
+\end{itemize}
+
+% ============================================================
+%     REFERENCER
+% ============================================================
+
+\enlargethispage{3\baselineskip}
+\section{Referencer}
+\vspace{1pt}
+\begin{itemize}
+\item {Jens Rikardt Andersen, MD, Københavns Universitet (specialevejleder). jra@nexs.ku.dk}
+\item {Kirsten Thal Jantzen, klinisk diætist, Herlev Hospital (praktikvejleder). kirsten.thal-jantzen@regionh.dk}
+\item {Janne Christensen, klinisk diætist, Rigshospitalet Glostrup (praktikvejleder). janne.christensen@regionh.dk}
+\end{itemize}
+
+\end{document}
