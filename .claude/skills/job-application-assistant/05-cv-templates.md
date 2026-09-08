@@ -42,6 +42,15 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
+% T1 + babel are required for Danish CVs: T1 puts æ ø å in the font as single
+% glyphs so the PDF text layer extracts them as real characters for ATS parsers
+% (OT1 composes them from accents and extraction degrades).
+\usepackage[T1]{fontenc}
+% Danish hyphenation via babel is OPTIONAL and NOT enabled: this machine has no
+% babel-danish (Arch: `pacman -S texlive-langeuropean`; TeX Live: `tlmgr install
+% hyphen-danish babel-danish`). Add \usepackage[danish]{babel} once installed --
+% it improves line breaking only. The æ ø å glyphs come from fontenc T1 above and
+% work without it.
 % moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
 % must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
 % \usepackage{hyperref} clashes with the class's own
@@ -52,7 +61,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Julian Askoe Bluming - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -62,13 +71,17 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Julian}{Askøe Bluming}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Pansvej 12, 2680 Solrød Strand, Danmark}{}{}
+\phone[mobile]{+45 91 56 85 28}
+\email{julian.askoe@gmail.com}
+% No LinkedIn/GitHub URL on file. Add one here when available, e.g.
+%   \extrainfo{\href{https://www.linkedin.com/in/<handle>}{LinkedIn}}
+% Leave the line commented out rather than emitting an empty \href - an
+% unresolved placeholder reaching a compiled CV is worse than no line.
+\extrainfo{Autoriseret klinisk diætist}
 
 \begin{document}
 \makecvtitle
@@ -118,6 +131,8 @@ Two related patterns are fine and should be kept:
 
 Section headings such as `\section{Core Competencies}`, `Professional Experience`, `Education`, `Languages`, `Publications`, `Honors and Awards`, `References` (and any others your template defines), plus the `Available upon request.` line under References, are all **literal English text baked into the template** - they do not translate themselves. Whenever the CV language (see `CV language` in the candidate profile) is not English, translate every one of these too, whatever they are, not just the body prose - a CV with a fully localized profile statement and bullets sitting under untouched English section headers reads as sloppy and inconsistent, and it's an easy thing to forget precisely because the prose translation is the obvious, visible part of the job. Worked example for Spanish: `Competencias Clave`, `Experiencia Profesional`, `Educaci\'on`, `Idiomas`, `Publicaciones`, `Distinciones y Premios`, `Referencias`, `Disponibles a solicitud.` The same rule applies for any other target language - check this explicitly during the verification pass.
 
+**Danish heading set (Julian's default for hospital, region and kommune postings)** — use these verbatim rather than re-translating each time: `\section{Profil}`, `\section{Kernekompetencer}`, `\section{Uddannelse}`, `\section{Klinisk praktik}`, `\section{Erhvervserfaring}`, `\section{Sprog}`, `\section{Publikationer}`, `\section{Kurser og certificeringer}`, `\section{Referencer}`, and the References line as `Referencer udleveres på forespørgsel.` Note that **Klinisk praktik** and **Erhvervserfaring** are deliberately separate headings: the 20 weeks of placements must never sit under an employment heading (see `01-candidate-profile.md`). Danish CVs also normally use `Kandidatspeciale` and `Bachelorprojekt` as sub-labels under Uddannelse.
+
 ## Section-by-Section Tailoring
 
 ### Profile Statement / Elevator Pitch (Best Practice)
@@ -129,12 +144,24 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For klinisk diætist roles (hospital, region, kommune, privat klinik) — Danish:**
+> Autoriseret klinisk diætist med kandidatgrad i Human Ernæring fra Københavns Universitet. Gennem 20 ugers klinisk praktik på Rigshospitalet og Bispebjerg-Frederiksberg har jeg arbejdet med diætetisk vejledning og ernæringsterapi inden for nefrologi, kardiologi, neurologi og endokrinologi, og jeg er vant til den daglige tværfaglige dialog med læger og sygeplejersker på afdelingen. I mit kandidatspeciale har jeg haft selvstændigt ansvar for direkte patientkontakt, oplæring i kostregistrering og løbende opfølgning af 42 deltagere. Jeg er udpræget detaljeorienteret i mit dokumentationsarbejde og vægter faglig sparring med kolleger højt. [Role-specific sentence tying the above to this department's patient group.]
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For forskningsdiætist / studiekoordinator / forskningsassistent roles — Danish:**
+> Autoriseret klinisk diætist og kandidat i Human Ernæring med usædvanligt konkret erfaring med den formelle forskningsproces. I mit kandidatspeciale udarbejdede jeg tillægsprotokol og deltagerinformation til VEK-godkendelse, registrerede studiet på ClinicalTrials.gov og stod for samtykkeindhentning, oplæring og opfølgning af 42 deltagere. Jeg har systematisk bearbejdet data i REDCap og VitaKost, trukket lab- og journaldata fra Sundhedsplatformen og gennemført den statistiske analyse i GraphPad Prism. Studiet forberedes aktuelt til publicering med mig som førsteforfatter. [Role-specific sentence tying the above to this study or research unit.]
+
+**For PhD-stipendiat roles — English (most Danish PhD calls are advertised in English):**
+> Clinically authorised dietitian with an MSc in Human Nutrition from the University of Copenhagen, seeking to move from running a clinical study to designing one. My thesis was a 42-participant add-on study in stage 4–5 chronic kidney disease, examining the correlation between renal clearance and calcium/phosphate balance alongside a method comparison of weighed versus image-based dietary registration. I authored the protocol amendment and participant information approved by the Danish research ethics committee, registered the trial on ClinicalTrials.gov, and carried out data management in REDCap and the statistical analysis in GraphPad Prism. The study is currently being prepared for publication with me as first author. [Role-specific sentence tying the above to this project's research question.]
+
+**For industry medical/scientific advisor roles — Danish or English per posting:**
+> Autoriseret klinisk diætist med kandidatgrad i Human Ernæring og praktisk erfaring fra begge sider af den kliniske ernæring: patientvejledning på hospitalsafdelinger inden for nefrologi, kardiologi og endokrinologi, og selvstændigt ansvar for et klinisk studie fra protokol og VEK-godkendelse til dataanalyse. Jeg oversætter gerne evidens til brugbar faglig rådgivning og er vant til at læse og vurdere forskningslitteratur kritisk. [Role-specific sentence on this company's product area and patient group.]
+
+<!-- Rules for all of the above:
+     - The bracketed final sentence is mandatory, not optional. A profile statement
+       without it is generic and reads as such.
+     - Never call the 20 weeks of placements "erfaring som ansat" / "employment".
+     - Never describe the manuscript as published - "forberedes til publicering" only.
+     - Never claim fluent spoken English (declared level is B2). -->
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

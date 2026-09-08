@@ -46,6 +46,12 @@ Judge the level comparison the same way you judge everything else in this framew
 
 **Worked example:** a candidate whose Languages table lists Spanish (Native) and English (B1/B2). A posting requiring "fluent Russian" → **FAIL**, Russian isn't declared at all. A posting requiring "fluent English" → **FLAG**, English is declared but "fluent" plausibly exceeds B1/B2 — score and draft the application, but tell the candidate this posting's bar may be a stretch and let them decide. A posting requiring "conversational English" or unspecified English → **PASS**, B1/B2 clears a "conversational" bar cleanly.
 
+**Julian's recurring cases.** Danish is native, so virtually every Danish posting passes cleanly — but the ad being written in Danish never *by itself* decides anything. The case that actually recurs is English:
+- "Flydende engelsk i skrift og tale" / "engelsk er koncernsprog" → **FLAG.** English is declared at B2, which is honest working level but plausibly below a stated fluency bar in speech. Score and draft; tell Julian the spoken bar may be a stretch and let him judge — a research group reading English literature all day is a very different bar from a commercial role presenting in English.
+- "Gode engelskkundskaber", "du læser engelsksproget faglitteratur", or English simply named without a level → **PASS.** B2 clears this, and the English-language MSc coursework (*Study Design in Human Nutrition*, *Evidence, Diet and Health*) is direct evidence.
+- Any third language as a job condition (tysk, svensk, arabisk…) → **FAIL.** Only Danish and English are declared.
+- An English-language ad for a Danish hospital or university post where the working language is Danish → **PASS.** Judge the role, not the ad.
+
 ## Scoring Dimensions
 
 Evaluate each job posting against these five dimensions:
@@ -60,9 +66,11 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Klinisk diætetisk vejledning og ernæringsterapi (nefrologi, kardiologi, endokrinologi, neurologi, onkologi/NIS, ERAS-perioperativ); kostregistrering, -beregning og dækningsgrad; ernæringsscreening og risikovurdering; klinisk forskningsmetode (protokol, VEK, ClinicalTrials.gov, samtykke, dataindsamling); REDCap; VitaKost; GraphPad Prism; Sundhedsplatformen; systematisk litteratursøgning (PICO) og kritisk artikelvurdering
+
+**Moderate match areas:** Statistik ud over deskriptiv/basal analyse; R (kursusniveau — *Study Design in Human Nutrition*); patientundervisning i grupper; kvalitetsudvikling og instruksarbejde; pædiatrisk, geriatrisk og psykiatrisk ernæring (ikke dækket af praktikforløbene); kommunal forebyggelse og sundhedsfremme; engelsk som arbejdssprog i tale
+
+**Weak match areas:** Ledelses- og budgetansvar; personaleledelse; salg, key account og kommerciel forhandling; storkøkken-/produktionsledelse og køkkendrift; fødevareproduktudvikling og -teknologi; regulatory affairs (fødevarelovgivning, claims); avanceret biostatistik og programmering (Python, SQL, SAS)
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +82,13 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+> **Calibrate for a new graduate.** Julian's clinical experience is 20 weeks of hospital placements plus an independently-run thesis study — not salaried employment. Score the *function* performed, not the employment label: the thesis work involved genuine protocol authorship, regulatory submission, participant management and data analysis, which is exactly the function a forskningsdiætist or studiekoordinator post describes. Postings explicitly requiring "flere års erfaring som klinisk diætist" are a real gap and should score accordingly (40-59), not be talked up.
+
+**Strong:** Klinisk diætist i hospitalsregi, særligt nefrologi/dialyse og hjerte-kar; forskningsdiætist og studiekoordinator i kliniske ernæringsstudier; forskningsassistent i ernæringsforskning; PhD-stipendiat i human/klinisk ernæring
+
+**Moderate:** Klinisk diætist i kommune eller privat klinik; ernæringsfaglig konsulent i sundhedsvæsenet; medical/scientific advisor eller produktspecialist inden for klinisk ernæring (Nutricia, Nestlé Health Science, Fresenius Kabi og lignende); projektmedarbejder i sundhedsfremme og forebyggelse; datamanager/REDCap-support i klinisk forskning
+
+**Entry-level (limited or no experience — apply only where the posting welcomes nyuddannede):** Selvstændig ernæringsansvarlig for en hel afdeling eller organisation; ernæring i pædiatri, psykiatri eller geriatri; fødevareudvikling og -produktion; storkøkken- og køkkenledelse; regulatory affairs; enhver rolle med ledelses- eller budgetansvar
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +103,17 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+
+Home base: Solrød Strand (2680). Search scope is **all of Sjælland** — Region Hovedstaden and Region Sjælland.
+
+- Anywhere on Sjælland reachable by public transport: **PASS**
+- Storkøbenhavn (København, Frederiksberg, Hvidovre, Herlev, Glostrup, Gentofte), Køge, Roskilde, Greve, Solrød: **PASS** (core commute band)
+- Region Sjælland (Næstved, Slagelse, Holbæk, Nykøbing F., Ringsted): **PASS**, note the commute length
+- Remote or hybrid with occasional on-site: **PASS**
+- Requires relocation off Sjælland (Fyn, Jylland, abroad): **FAIL** (deal-breaker)
+- **Requires own car or a driving licence:** **FLAG** — licence expected approx. Nov 2026. Do not fail these; surface the date and let the user decide, since many postings will accept a start after it.
+- Night, evening or rotating shift work: **FAIL** (stated deal-breaker)
+- Frequent international travel: **FLAG** (discuss with user; also consider the B2 spoken-English level)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +126,20 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Kombinere klinisk diætetisk patientbehandling med klinisk forskning — ikke vælge mellem dem. En stilling med forskningstilknytning, kvalitetsudvikling eller projektarbejde ved siden af patientarbejdet scorer højere end ren drift.
+- Færdiggøre og publicere kandidatspecialet som førsteforfatter, og bygge videre på en publikationsprofil inden for klinisk ernæring
+- Opbygge dybde inden for nyre-, hjerte- og perioperativ ernæring, hvor de kliniske praktikker og specialet allerede giver et fundament
+- Holde døren åben mod et PhD-forløb inden for human/klinisk ernæring på 2-4 års sigt
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- **Tasks that energize:** direkte diætetisk patientkontakt og opfølgning; systematisk dataarbejde hvor kvaliteten kan ses; protokol- og metodearbejde; kritisk læsning af litteratur; tværfaglig sparring med læger, sygeplejersker og diætistkolleger; undervisning af patienter og kolleger
+- **Tasks that drain:** provisions- og salgsdrevet arbejde; kommercielle vægttabskoncepter uden evidensgrundlag; høj-volumen ekspeditionsarbejde uden tid til grundighed; administrativt arbejde uden fagligt indhold; at arbejde uden nogen at spørge til råds
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security:** Nyuddannet og jobsøgende med tiltrædelse straks. Ingen lønbaseline registreret — vurder ikke stillinger på løn, men flag åbenlyst atypiske vilkår (fx tidsbegrænsning under 6 måneder, deltid hvor fuldtid var forventet, timeløn uden overenskomst).
+- **Flexibility:** Stor fleksibilitet i hverdagen og få personlige bindinger. **Men:** nat- og skifteholdsarbejde er en deal-breaker, og kørekort er først klar omkring nov. 2026 — stillinger der kræver bil eller kørsel flagges til brugerens egen vurdering frem for at blive udelukket.
+- **Professional development:** Adgang til faglig sparring og et diætistfagligt miljø er et krav, ikke et gode — en solostilling uden kolleger på området er en deal-breaker. Vægter formaliseret oplæring, supervision og mulighed for forsknings- eller kursusdeltagelse højt som nyuddannet.
 
 ### 6. Salary Benchmark (Optional)
 

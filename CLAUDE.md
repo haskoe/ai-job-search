@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Julian Askøe Bluming
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Julian Askøe Bluming, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +13,81 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Julian Askøe Bluming
+- **Location:** Solrød Strand, Danmark (Pansvej 12, 2680 Solrød Strand — searches cover all of Sjælland; no driving licence until approx. Nov 2026, so car-required roles are flagged, not excluded)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Dansk | Native |
+  | Engelsk | B2 — good working level; comfortable with research literature and written work, less comfortable in fast spoken English |
+- **CV language:** Danish or English, decided per posting — Danish for hospitals, regioner, kommuner and Danish private clinics; English for industry, pharma and international research groups
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Newly graduated (MSc defended Aug 2026), actively job seeking
+- **LinkedIn headline:** "Autoriseret klinisk diætist, kandidat i Human Ernæring"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **MSc in Human Nutrition** (2024-2026) - Københavns Universitet
+  - Thesis: "Klinisk tillægsstudie (n=42): korrelation mellem nyrefunktion (clearance) og calcium-/fosfatbalance hos stadie 4-5 kronisk nyresyge patienter, samt metodesammenligning af kostindtag via vejet registrering vs. billedbaseret fotometode"
+  - Topics: forskningsdesign, protokoludarbejdelse, statistisk analyse (R-studio, GraphPad Prism), kritisk litteraturvurdering, molekylær onkologi
+- **Professionsbachelor in Ernæring og Sundhed (Klinisk Diætetik)** (2021-2024) - Københavns Professionshøjskole
+  - Bachelor project: prospektivt observationelt studie af ERAS-behandlede cystektomi-patienter, Rigshospitalet Ernæringsenheden (n=25)
+  - Topics: energi- og proteinindtag og dækningsgrad, Nutrition Impact Symptoms, systematisk litteratursøgning (PICO), kritisk vurdering af kliniske studier
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Specialestuderende / forskningsansvarlig** (kandidatspeciale, 2024-2026) - **Københavns Universitet, klinisk tillægsstudie** (København)
+  - Udarbejdede udkast til tillægsprotokol og deltagerinformation (godkendt af VEK), registrerede studiet på ClinicalTrials.gov
+  - Varetog participant-information, samtykkeindhentning, oplæring i kostregistrering, samt løbende og telefonisk opfølgning af 42 deltagere i koordination med forsøgslæge
+  - Udtræk af lab- og journaldata fra Sundhedsplatformen, databearbejdning i VitaKost og REDCap, statistisk analyse i GraphPad Prism; forbereder studiet til publicering som førsteforfatter
+- **Klinisk praktik, nefrologisk afdeling** (2023-11 - 2024-01) - **Rigshospitalet København** (København)
+  - 10 ugers klinisk praktik: vejledning af prædialyse- og dialysepatienter i fosfat-, kalium- og proteinregulering
+  - Vejledning og håndtering af endokrinologiske tilstande (type 1/2-diabetes, pancreasresekerede patienter)
+  - Løbende tværfaglig dialog og sparring med afdelingens læger og sygeplejersker
+- **Klinisk praktik, hjerteafdelingen** (2023-09 - 2023-11) - **Bispebjerg og Frederiksberg Hospital** (København)
+  - 6 ugers praktik på hjerteafdelingen og reumatologisk forskningsenhed
+  - Vejledning i hjertesund/kolesterolsænkende kost ved hyperkolesterolæmi samt højproteinkost til postoperative patienter
+  - Selvstændig undervisning i vægttab for knæartrosepatienter i et forskningsprojekt (1 ugedag)
+- **Klinisk praktik, neurologisk afdeling** (2023-08 - 2023-09) - **Rigshospitalet Glostrup** (Glostrup)
+  - 4 ugers praktik: opstart af ernæringsterapi og diætetisk praksis over for neurologiske patienter (tetraplegi, Parkinson), spiseforstyrrelser og diabetes
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Klinisk diætetisk vejledning og ernæringsterapi (nefrologi, kardiologi, neurologi, endokrinologi, onkologi); kostregistrering og -beregning; ernæringsscreening og -risikovurdering
+- **Secondary:** Klinisk forskningsmetode — protokoludarbejdelse, VEK-ansøgning, ClinicalTrials.gov-registrering, samtykkeindhentning, dataindsamling og -bearbejdning; statistisk analyse; systematisk litteratursøgning (PICO) og kritisk artikelvurdering
+- **Domain:** Human ernæring; kronisk nyresygdom (stadie 4-5, calcium-/fosfatbalance); hjerte-kar-ernæring; ERAS og perioperativ ernæring; onkologisk ernæring og NIS-faktorer; artrose og vægttab
+- **Software:** REDCap, VitaKost, GraphPad Prism, R-studio, Sundhedsplatformen, Microsoft Office
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Dansk autorisation som klinisk diætist** (Styrelsen for Patientsikkerhed)
+- Kørekort forventet erhvervet nov. 2026
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- Bluming, J. et al. (in preparation). Klinisk tillægsstudie af nyrefunktion og calcium-/fosfatbalance hos stadie 4-5 kronisk nyresyge patienter, samt metodesammenligning af kostregistrering. *Manuscript in preparation — first author.*
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None recorded
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Detaljeorienteret** - udpræget høj kvalitetssans i datadokumentation; sporbarhed og korrekthed i registrering er en drivkraft, ikke en pligt
+- **Selvkørende med aktiv sparring** - driver gerne egne opgaver selvstændigt, men opsøger bevidst faglige diskussioner og spørger til råds frem for at gætte
+- **Strengths:** Struktur og systematik i dataarbejde; kombination af klinisk patientkontakt og formel forskningsmetode; fleksibilitet i hverdagen; høj faglig ambition
+- **Growth areas:** Begrænset erfaring som ansat (klinisk erfaring stammer fra 20 ugers praktik og specialearbejde frem for fastansættelse); mundtlig engelsk på B2-niveau; kørekort først klar nov. 2026
+- **Thrives in:** Fagligt miljø med diætistkolleger og tværfaglig sparring, hvor evidens og datakvalitet vægtes højt, og hvor klinisk patientarbejde kan kombineres med forskning eller projektarbejde
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Kombinationen af klinisk forskning og diætetisk patientbehandling — at arbejde med de samme patienter både som behandler og som forsker
+- Ernæring og styrketræning som fagligt og personligt interessefelt
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Hospitaler og regioner (klinisk diætist, ernæringsenheder): Rigshospitalet, Herlev, Bispebjerg og Frederiksberg, Hvidovre, Region Sjællands sygehuse (Næstved, Slagelse, Holbæk, Køge)
+- Forskning og akademi (forskningsdiætist, studiekoordinator, PhD-stipendiat): Københavns Universitet (NEXS), DTU Fødevareinstituttet, hospitalernes forskningsenheder
+- Kommuner (sundheds- og ernæringskonsulent, forebyggelse): Solrød, Køge, Greve, Roskilde, Københavns Kommune
+- Industri (medical/scientific advisor, produktspecialist): Nutricia, Nestlé Health Science, Fresenius Kabi, Arla Foods Ingredients, Novo Nordisk
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Rene salgsstillinger (provisions- eller salgsdrevet frem for klinisk/videnskabeligt indhold)
+- Solostillinger uden diætistkolleger eller fagligt fællesskab — faglig sparring er en forudsætning, ikke et gode
+- Nat- og skifteholdsarbejde
+- Vægttabskoncepter uden klinisk/evidensbaseret grundlag (kommercielle slankekoncepter, kosttilskudssalg)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

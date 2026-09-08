@@ -11,7 +11,7 @@ description: >
   jobs, engineering vacancies, data/ML jobs, DevOps roles, remote developer jobs,
   "are there any <tech role> jobs in <place>", look up this freehire job posting.
 context: fork
-enabled: true  # set to false to keep this portal installed but have /scrape skip it
+enabled: false  # disabled by /setup 2026-09-08 - tech-first aggregator, no coverage for clinical nutrition roles; set true if the search ever widens to tech
 allowed-tools: Bash(bun run .agents/skills/freehire-search/cli/src/cli.ts *)
 ---
 

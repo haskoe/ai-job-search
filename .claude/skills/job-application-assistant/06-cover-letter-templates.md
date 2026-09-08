@@ -76,8 +76,10 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TITLE NAME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{}{\Huge{[YOUR_NAME]}}{  \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} | [YOUR_PHONE] |  \urlstyle{same}\href{[YOUR_LINKEDIN_URL]}{LinkedIn}
+\namesection{}{\Huge{Julian Askøe Bluming}}{  \href{mailto:julian.askoe@gmail.com}{julian.askoe@gmail.com} | +45 91 56 85 28 | Solrød Strand
 }
+% No LinkedIn URL on file. When one exists, append to the contact line:
+%   | \urlstyle{same}\href{https://www.linkedin.com/in/<handle>}{LinkedIn}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     MAIN COVER LETTER CONTENT
@@ -108,7 +110,7 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 % doubled break triggers "! LaTeX Error: There's no line here to end."
 \closing{Kind regards,}
 
-\signature{[YOUR_NAME]}
+\signature{Julian Askøe Bluming}
 \end{flushright}
 \end{document}
 ```

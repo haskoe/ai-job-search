@@ -1,8 +1,8 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Julian Askøe Bluming
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
+%% This master file may run past 2 pages; TAILORED CVs must be exactly 2 pages.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -23,6 +23,15 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
+% T1 is required for a Danish CV: it puts æ ø å in the font as single glyphs,
+% so the PDF text layer extracts them as real characters for ATS parsers.
+% Without it, OT1 composes them from accents and extraction degrades.
+\usepackage[T1]{fontenc}
+% Danish hyphenation via babel is OPTIONAL and NOT enabled: this machine has no
+% babel-danish (Arch: `pacman -S texlive-langeuropean`; TeX Live: `tlmgr install
+% hyphen-danish babel-danish`). Add \usepackage[danish]{babel} once installed --
+% it improves line breaking only. The æ ø å glyphs come from fontenc T1 above and
+% work without it.
 % moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
 % must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
 % \usepackage{hyperref} clashes with the class's own
@@ -33,151 +42,201 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Julian Askoe Bluming - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
     pdfpagemode=UseNone,
 }}
 \usepackage[scale=0.80]{geometry}
+\usepackage{needspace}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Julian}{Askøe Bluming}
+\address{Pansvej 12, 2680 Solrød Strand, Danmark}{}{}
+\phone[mobile]{+45 91 56 85 28}
+\email{julian.askoe@gmail.com}
+% No LinkedIn URL on file. When one exists, replace the line below with:
+%   \extrainfo{Autoriseret klinisk diætist \textbar{} \href{https://www.linkedin.com/in/...}{LinkedIn}}
+\extrainfo{Autoriseret klinisk diætist}
 
 \begin{document}
 
 \makecvtitle
 
 % ============================================================
-%     PROFILE STATEMENT
+%     PROFIL
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Autoriseret klinisk diætist med kandidatgrad i Human Ernæring fra Københavns Universitet (forsvaret aug.\ 2026). Kombinerer klinisk diætetisk patientbehandling med praktisk erfaring i den formelle forskningsproces: fra protokoludarbejdelse og VEK-godkendelse til dataindsamling, databehandling og statistisk analyse. 20 ugers klinisk praktik fordelt på nefrologi, kardiologi, neurologi og endokrinologi. Udpræget detaljeorienteret med høj kvalitetssans i datadokumentation, selvkørende i egne opgaver og bevidst opsøgende på faglig sparring.}
 
 % ============================================================
-%     CORE COMPETENCIES
+%     KERNEKOMPETENCER
 % ============================================================
 
-\section{Core Competencies}
+\section{Kernekompetencer}
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Klinisk diætetik}: Diætetisk vejledning og ernæringsterapi inden for nefrologi (fosfat-, kalium- og proteinregulering, prædialyse og dialyse), kardiologi (hjertesund og kolesterolsænkende kost), endokrinologi (type 1/2-diabetes, pancreasresektion), neurologi og onkologi.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Ernæringsvurdering}: Kostregistrering og -beregning, ernæringsscreening og risikovurdering, dækningsgradsberegning, Nutrition Impact Symptoms (NIS-faktorer), perioperativ og ERAS-ernæring.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Klinisk forskningsmetode}: Protokol- og deltagerinformationsudarbejdelse, VEK-ansøgning, registrering på ClinicalTrials.gov, samtykkeindhentning, deltagerrekruttering og -opfølgning, systematisk dataindsamling og kvalitetssikring.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Data og analyse}: REDCap, VitaKost, GraphPad Prism, R-studio (kursusniveau), journal- og lab-dataudtræk fra Sundhedsplatformen.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Evidensvurdering}: Systematisk litteratursøgning (PICO), kritisk analyse og vurdering af studiedesign og forskningslitteratur.
+
+\item \textbf{Formidling og samarbejde}: Individuel patientvejledning og undervisning, udarbejdelse af diætetisk vejledningsmateriale, tværfagligt samarbejde med læger og sygeplejersker på afdelingsniveau.
 
 \end{itemize}
 
 % ============================================================
-%     PROFESSIONAL EXPERIENCE
+%     FORSKNINGSERFARING
 % ============================================================
 
-\section{Professional Experience}
+\section{Forskningserfaring}
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2024-2026}{Specialestuderende, forskningsansvarlig}{Københavns Universitet}{København}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Klinisk tillægsstudie (n=42) til en større kohorte: korrelation mellem nyrefunktion (clearance) og calcium-/fosfatbalance hos stadie 4-5 kronisk nyresyge patienter, samt metodesammenligning af kostindtag via vejet registrering vs.\ billedbaseret fotometode.}
+    \item {Udarbejdede udkast til tillægsprotokol og deltagerinformation, godkendt af Videnskabsetisk Komité (VEK), og registrerede studiet på ClinicalTrials.gov.}
+    \item {Varetog participant-information, samtykkeindhentning og oplæring af deltagere i kostregistrering i koordination med forsøgslæge, samt løbende og telefonisk diætetisk opfølgning.}
+    \item {Udtræk af lab- og journaldata fra Sundhedsplatformen, systematisk databearbejdning i VitaKost og REDCap, statistisk analyse i GraphPad Prism.}
+    \item {Udarbejdede diætetisk vejledningsmateriale til studiet. Forbereder aktuelt studiet til videnskabelig publicering som førsteforfatter.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+% Exact months of the bachelor project are not on file; a lone year imports
+% worse into ATS forms than a range. Replace with e.g. {feb. 2024 - jun. 2024}
+% once confirmed - do not guess.
+\item{\cventry{2024}{Bachelorprojekt}{Rigshospitalet, Ernæringsenheden}{København}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Bidrog til opstartsfasen og den systematiske dataindsamling i et prospektivt, observationelt studie af ERAS-behandlede cystektomi-patienter på urologisk afdeling (n=25).}
+    \item {Kortlægning af energi- og proteinindtag samt dækningsgrad (>75\%), registrering af Nutrition Impact Symptoms, opfølgning på vægtændringer og væskebalance over et 30-dages postoperativt forløb.}
 \end{itemize}}}
 
 \end{itemize}
 
 % ============================================================
-%     EDUCATION
+%     KLINISK PRAKTIK
 % ============================================================
 
-\section{Education}
+\section{Klinisk praktik}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{nov. 2023 - jan. 2024}{Klinisk praktik, nefrologisk afdeling (10 uger)}{Rigshospitalet}{København}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Klinisk vejledning af prædialyse- og dialysepatienter inden for fosfat-, kalium- og proteinregulering.}
+    \item {Vejledning og håndtering af endokrinologiske tilstande (type 1/2-diabetes og pancreasresekerede patienter).}
+    \item {Løbende tværfaglig dialog og sparring med afdelingens læger og sygeplejersker.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{sep. 2023 - nov. 2023}{Klinisk praktik, hjerteafdelingen (6 uger)}{Bispebjerg og Frederiksberg Hospital}{København}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Vejledning i hjertesund og kolesterolsænkende kost til patienter med hyperkolesterolæmi samt højproteinkost til postoperative patienter.}
+    \item {Selvstændig undervisning i vægttab for knæartrosepatienter i forbindelse med et forskningsprojekt i den reumatologiske forskningsenhed (1 ugedag).}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{aug. 2023 - sep. 2023}{Klinisk praktik, neurologisk afdeling (4 uger)}{Rigshospitalet Glostrup}{Glostrup}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Deltog i opstart af ernæringsterapi og diætetisk praksis over for neurologiske patienter (bl.a.\ tetraplegi og Parkinson), spiseforstyrrelser og diabetes.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     UDDANNELSE
+% ============================================================
+
+\section{Uddannelse}
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\needspace{5\baselineskip}
+\item{\cventry{2024-2026}{Kandidat (MSc) i Human Ernæring}{Københavns Universitet}{København}{}{\vspace{1pt}
+Kandidatspeciale: klinisk tillægsstudie af nyrefunktion og calcium-/fosfatbalance ved stadie 4-5 kronisk nyresygdom samt metodesammenligning af kostregistrering (se Forskningserfaring).\\
+Relevante kurser: \emph{Study Design in Human Nutrition} (protokoludarbejdelse, studiedesign, statistisk analyse i R-studio); \emph{Evidence, Diet and Health} (kritisk analyse af forskningslitteratur og studiedesigns); \emph{Cell Cycle and Cancer Control} (molekylær onkologi).
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\needspace{5\baselineskip}
+\item{\cventry{2021-2024}{Professionsbachelor i Ernæring og Sundhed (Klinisk Diætetik)}{Københavns Professionshøjskole}{København}{}{\vspace{1pt}
+Bachelorprojekt gennemført i Ernæringsenheden på Rigshospitalet (se Forskningserfaring).\\
+Relevant kursus: \emph{Tolkning og anvendelse af klinisk forskning} (systematisk litteratursøgning efter PICO, kritisk vurdering af kliniske studier).
 }}
 
 \end{itemize}
 
 % ============================================================
-%     LANGUAGES
+%     AUTORISATION OG KURSER
 % ============================================================
 
-\section{Languages}
+\section{Autorisation}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {Autoriseret klinisk diætist (dansk autorisation).}
+\item {Kørekort under erhvervelse, forventet erhvervet nov.\ 2026.}
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     SPROG
 % ============================================================
 
-\section{Publications}
+\section{Sprog}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
+\item {Dansk (modersmål), engelsk (godt arbejdsniveau i skrift og faglitteratur).}
 \end{itemize}
 
 % ============================================================
-%     HONORS AND AWARDS (optional)
+%     PUBLIKATIONER
 % ============================================================
 
-\section{Honors and Awards}
+\section{Publikationer}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {Bluming, J.\ et al.\ Klinisk tillægsstudie af nyrefunktion og calcium-/fosfatbalance hos stadie 4-5 kronisk nyresyge patienter samt metodesammenligning af kostregistrering. \emph{Manuskript under udarbejdelse til publicering, førsteforfatter.}}
 \end{itemize}
 
 % ============================================================
-%     REFERENCES
+%     INTERESSER
 % ============================================================
 
-\section{References}
+\section{Interesser}
 \vspace{1pt}
 \begin{itemize}
-\item{Available upon request.}
+\item {Ernæring og styrketræning.}
+\end{itemize}
+
+% ============================================================
+%     REFERENCER
+% ============================================================
+
+\section{Referencer}
+\vspace{1pt}
+\begin{itemize}
+\item {Jens Rikardt Andersen, MD, Københavns Universitet -- specialevejleder. jra@nexs.ku.dk, +45 23 34 66 54.}
+\item {Kirsten Thal Jantzen, klinisk diætist, Herlev Hospital -- vejleder, nefrologisk afdeling. kirsten.thal-jantzen@regionh.dk, +45 60 75 76 18.}
+\item {Janne Christensen, klinisk diætist, Rigshospitalet Glostrup -- praktikvejleder. janne.christensen@regionh.dk, +45 38 63 22 27.}
+\item {Yderligere referencer udleveres på forespørgsel.}
 \end{itemize}
 
 \end{document}
